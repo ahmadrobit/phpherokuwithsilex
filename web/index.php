@@ -21,9 +21,9 @@ $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('index.twig');
 });
-$app->get('/mama', function() use($app) {
+$app->get('/belajarkonekdatabase', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig');
+  return $app['twig']->render('belajarkonekdatabase.twig');
 });
 
 $app->run();
